@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Hind+Vadodara|Raleway:800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #222222;
+}
+
+h1 {
+    font-size: 5em;
+}
+h2, h3 {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+p {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: .9em;
+    color: #222222;
+}
+
+.subtitle {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.subtitle > span {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+    font-family: 'Caveat', cursive;
+    color: #222222;
+    font-size: 1.1em;
+}
+
+.subtitle > span:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 1px;
+    background: #222222;
+}
+
+.subtitle > span:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 60vw;
+    height: 1px;
+    background: #222222;
+}
+
+.subtitle > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.subtitle > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    font-family: 'Hind Vadodara', sans-serif;
+    color: #222222;
+}
+a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+li {
+    padding: 5px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+}
+.title {
+    padding-bottom: 40px;
+    grid-column: 1/2;
+}
+
+.content{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-row-gap: 40px;
+}
+.navigation {
+    padding: 40px;
+    height: 100%;
+    border-left: 1px solid #222222;
+}
+
+.base {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.active {
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .navigation {
+        padding: 40px;
+        height: 100%;
+        border-left: none;
+        border-top: 1px solid #222222;
+    }
+    .title {
+        padding-bottom: 40px;
+        grid-column: 1/2;
+    }
+    .content{
+        grid-template-columns: 1fr;
+    }
+  }
